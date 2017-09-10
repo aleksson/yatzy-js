@@ -1,0 +1,4 @@
+# ignorera dessa mappar
+node_modules
+*~
+.DS_Store
