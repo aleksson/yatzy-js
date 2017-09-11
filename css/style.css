@@ -1,0 +1,28 @@
+body{
+	//font-family: monospace;
+}
+table, th, td {
+    border: 1px solid black;
+    //border-collapse: collapse;
+    border-spacing: 5px;
+    text-align: left;
+}
+th, td {
+    padding: 5px;
+    color: white;
+}
+input ,button{
+	color: black;
+}
+#d1,#d2,#d3,#d4,#d5{
+	
+}
+.gameArea{
+	background-color: gray;
+	width: 300px;
+	height: 700px;
+}
+.active{
+	color: orange;
+	font-size: 20px;
+}
