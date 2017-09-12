@@ -132,8 +132,6 @@ function throwDices() {
 	clearTipField();
 
 
-
-
 	total = 0;
 	timesLeft--;
 	mydices = [];
@@ -159,6 +157,7 @@ function throwDices() {
 
 
 
+
 		//console.log("these dices should not be touched:", markedDices);
 		dices.forEach(function (num,i) {
 
@@ -167,9 +166,11 @@ function throwDices() {
 			// 	num: `+ num +`
 			// 	markedDices:`+markedDices[i]);
 
+
+
 			if(markedDices[i] == i){
 				//console.group(markedDices);
-				alert("dont flip me:" + markedDices[i]);
+				//alert("dont flip me:" + markedDices[i]);
 				console.log("dice nr :" ,markedDices[i], "is marked")
 				return;
 			} 
@@ -276,6 +277,7 @@ function holdDice(dice) {
 
 
 function removeDice(dice) {
+	console.log("REMOVE DICE")
 	for(d in holdingDices){
 		console.log(d);
 	}
@@ -284,6 +286,8 @@ function removeDice(dice) {
 
 	dice.className = "btn";
 	dice.setAttribute("onClick", "holdDice(this)");
+
+
 }
 
 

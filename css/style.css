@@ -1,11 +1,13 @@
 body{
 	//font-family: monospace;
+	background-color: darkslategrey;
 }
 table, th, td {
-    border: 1px solid black;
+    border: 1px dotted black;
     //border-collapse: collapse;
     border-spacing: 5px;
     text-align: left;
+    width:100%
 }
 th, td {
     padding: 5px;
@@ -22,7 +24,21 @@ input ,button{
 	width: 300px;
 	height: 700px;
 }
+.gameArea h1{
+	color:white;
+	text-shadow: 1px 1px 1px #000;
+	text-align: center;
+}
+.player{
+	text-shadow: 1px 1px 1px #000;
+}
 .active{
 	color: orange;
 	font-size: 20px;
+}
+._sum{
+	background-color: #9c9c9c;
+}
+._total{
+	background-color: #a2a2a2;
 }

@@ -160,12 +160,21 @@ function markDice(id) {
 
 function unmarkDice(dice,point){
 
-	console.log(markedDices);
+	// hitta vilken & ta bort
+	var myDices = markedDices;  
+	var index = myDices.indexOf(dice.toString());
+
+	if (index > -1) {
+	    myDices.splice(index, 1);
+	}
+
+
 	$('#img_d'+ dice)[0].src = "img/d"+point+".gif";
 	var denna = document.getElementById('img_d'+ dice);
 	denna.setAttribute("onClick", "markDice(this.id)");
 
-	console.log("ta bort :" + point + "poäng"); 
+	//console.log("ta bort :" + point + "poäng"); 
+	console.log("dessa är nu dina markerade tärningar:", markedDices)
 
 }
 
