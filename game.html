@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title></title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    
+
+
+    <main class="container-fluid">
+        
+        <span hidden>
+
+            <h3>Current Player: <b id="currentPlayer"></b></h3>
+                
+            <p>Antal kast kvar: <b><i id="timesLeft" class="badge">3</i> </b> </p>
+            <p class="hidden">Dices: <b><i id="dices"></i></b></p>
+            <p>Total: <b><i id="dicesTotal"></i></b></p>
+            <p class="hidde">Möjligheter: <b id="dicesInfo"></b></p>
+        </span>
+
+        
+        <button class="btn btn-warning" id="kastaTarning" onclick="throwDices()">Kasta Tärning</button><br><br>
+
+        <div class="diceArea well" hidden>
+            <h1>Detta kastet:</h1>
+            <i>klicka på tärningarna du vill spara</i><br>
+            <img id="img_d1" src="./img/empty.gif" onclick="markDice(this.id)">
+            <img id="img_d2" src="#" onclick="markDice(this.id)">
+            <img id="img_d3" src="#" onclick="markDice(this.id)">
+            <img id="img_d4" src="#" onclick="markDice(this.id)">
+            <img id="img_d5" src="#" onclick="markDice(this.id)">
+        </div>
+        
+    
+
+        <div hidden>
+            <center class="">
+            <i>klicka på tärningarna du vill spara</i><br>
+            <button id="d1" value="" class="btn" onclick="holdDice(this)"></button>
+            <button id="d2" value="" class="btn" onclick="holdDice(this)"></button>
+            <button id="d3" value="" class="btn" onclick="holdDice(this)"></button>
+            <button id="d4" value="" class="btn" onclick="holdDice(this)"></button>
+            <button id="d5" value="" class="btn" onclick="holdDice(this)"></button>
+            </center>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <!--script type="text/javascript" src="logic/newPlayer.js"></script>
+    <script type="text/javascript" src="logic/players.js"></script-->
+    <script type="text/javascript" src="./game2.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
