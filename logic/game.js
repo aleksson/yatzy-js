@@ -145,8 +145,8 @@ function throwDices() {
 		}
 
 		// spela ljud
-		//var diceSound = new Audio('throw.mp3');
-		//diceSound.play();
+		var diceSound = new Audio('throw.mp3');
+		diceSound.play();
 
 		//visa tärningar
 		diceArea[0].className = "diceArea";
